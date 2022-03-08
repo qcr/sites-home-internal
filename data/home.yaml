@@ -13,6 +13,7 @@ features:
       - "/docs.mp4"
   - name: Open source
     target: "https://qcr.github.io/"
+    media: "/open_source.jpg"
   - name: Jobs
     target: "https://research.qut.edu.au/qcr/category/jobs-all/"
     media: "/jobs.jpg"
