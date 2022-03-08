@@ -5,6 +5,8 @@ import { ThemeProvider } from "@mui/material/styles";
 
 import { QcrFavicon, qcrTheme } from "qcr-sites-shared";
 
+import "qcr-sites-shared/lib/styles/styles.css";
+
 const theme = qcrTheme();
 
 function MyApp({ Component, pageProps }: AppProps) {
