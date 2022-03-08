@@ -1,0 +1,9 @@
+
+{
+  "compilerOptions": {
+    "noEmit": false,
+    "module": "CommonJS"
+  },
+  "extends": "../tsconfig.json",
+  "include": ["./*.ts"]
+}

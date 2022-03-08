@@ -1,0 +1,27 @@
+{
+  "name": "sites-home-internal",
+  "version": "0.2.0",
+  "private": true,
+  "scripts": {
+    "dev": "npm run build_loaders && next dev",
+    "build": "npm run build_loaders && next build",
+    "build_loaders": "tsc -p loaders/",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "next": "12.1.0",
+    "qcr-sites-shared": "github:qcr/sites-shared#v0.2.1",
+    "react": "17.0.2",
+    "react-dom": "17.0.2"
+  },
+  "devDependencies": {
+    "@types/loader-utils": "^2.0.3",
+    "@types/node": "17.0.21",
+    "@types/react": "17.0.39",
+    "eslint": "8.10.0",
+    "eslint-config-next": "12.1.0",
+    "typescript": "4.6.2",
+    "webpack": "^5.70.0"
+  }
+}
