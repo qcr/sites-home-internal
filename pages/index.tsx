@@ -56,7 +56,13 @@ export default function HomePage() {
                 key={i}
                 text={f.name}
                 linkUrl={f.target}
-                mediaUrls={f.media}
+                mediaUrls={
+                  f.media
+                    ? typeof f.media === "string"
+                      ? [f.media]
+                      : f.media
+                    : undefined
+                }
               />
             ))}
         </StyledFeatures>
