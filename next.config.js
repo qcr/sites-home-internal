@@ -1,6 +1,18 @@
-/** @type {import('next').NextConfig} */
-const nextConfig = {
-  reactStrictMode: true,
-}
+const path = require("path");
 
-module.exports = nextConfig
+/** @type {import('next').NextConfig} */
+module.exports = {
+  reactStrictMode: true,
+  webpack: (config) => {
+    config.module.rules.push(
+      ...[
+        {
+          test: /\.ya?ml$/,
+          loader: "./loaders/yaml.js",
+        },
+      ]
+    );
+
+    return config;
+  },
+};
