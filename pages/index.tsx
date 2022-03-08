@@ -31,6 +31,7 @@ const StyledLinks = styled("div")({
   display: "flex",
   flexDirection: "column",
   justifyContent: "center",
+  width: "350px",
   p: {
     marginTop: "6px",
     marginBottom: "6px",
