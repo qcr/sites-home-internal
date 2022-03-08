@@ -12,19 +12,25 @@ import {
 import data from "data/home.yaml";
 
 const StyledBody = styled(QcrBody)({
-  maxWidth: "1000px",
+  display: "flex",
+  flexDirection: "row",
+  justifyContent: "space-evenly",
+  maxWidth: "initial",
 });
 
 const StyledFeatures = styled("div")({
+  alignContent: "center",
   display: "flex",
   flexDirection: "row",
   flexWrap: "wrap",
   marginTop: "16px",
+  maxWidth: "1000px",
 });
 
 const StyledLinks = styled("div")({
   display: "flex",
   flexDirection: "column",
+  justifyContent: "center",
   p: {
     marginTop: "6px",
     marginBottom: "6px",
