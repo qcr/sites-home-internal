@@ -1,0 +1,20 @@
+features:
+  - name: Research
+    target: "https://research.qut.edu.au/qcr/"
+  - name: Wiki
+    target: "https://wiki.qut.edu.au/display/cyphy/QUT+Centre+for+Robotics/"
+  - name: Technical docs
+    target: "https://qcr-docs.qut.edu.au/"
+  - name: Open source
+    target: "https://qcr.github.io/"
+  - name: Jobs
+    target: "https://research.qut.edu.au/qcr/category/jobs-all/"
+  - name: QUT virtual
+    target: "https://qutvirtual4.qut.edu.au/"
+links:
+  - name: Printing on S11
+    target: "https://wiki.qut.edu.au/display/cyphy/Printing"
+  - name: Reconcile credit card expenses
+    target: "https://flexipurchase.com/Site/#/home"
+  - name: Log a new HEAT request
+    target: "https://heat2.qut.edu.au/HEAT/Default.aspx"
