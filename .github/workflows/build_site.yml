@@ -1,0 +1,38 @@
+name: "Builds static website & hosts on https://home.qcr.ai"
+
+on:
+  push:
+    branches:
+      - master
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-20.04
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v2
+        with:
+          fetch-depth: 0
+      - name: Setup node
+        uses: actions/setup-node@v1
+        with:
+          node-version: "16"
+          check-latest: true
+      - name: Install dependencies
+        run: npm install
+      - name: Build site
+        run: npm run build
+      - name: Push result to gh_pages branch
+        run: |
+          cp -r out/ ../
+          git fetch --all
+          git checkout -f gh_pages
+          git reset --hard pages 
+          git clean -d -x -f
+          cp -r ../out/* .
+          git config --local user.email "actions@github.com"
+          git config --local user.name "GitHub Action"
+          git add .
+          git commit -m "Generated from contents of master commit: $(git rev-parse --short "$GITHUB_SHA")"
+          git push -f
