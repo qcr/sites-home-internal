@@ -11,6 +11,8 @@ import {
 
 import data from "data/home.yaml";
 
+const BASE_PATH = "/sites-home-internal";
+
 const StyledBody = styled(QcrBody)({
   display: "flex",
   flexDirection: "row",
@@ -65,9 +67,10 @@ export default function HomePage() {
                 linkUrl={f.target}
                 mediaUrls={
                   f.media
-                    ? typeof f.media === "string"
-                      ? [f.media]
-                      : f.media
+                    ? (typeof f.media === "string"
+                        ? [f.media]
+                        : f.media
+                      ).map((m) => (BASE_PATH ? BASE_PATH + m : m))
                     : undefined
                 }
               />
