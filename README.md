@@ -1,6 +1,8 @@
 # QCR's internal home page
 
 [![QUT Centre for Robotics Open Source](https://github.com/qcr/qcr.github.io/raw/master/misc/badge.svg)](https://qcr.github.io)
+![Primary language](https://img.shields.io/github/languages/top/qcr/sites-home-internal)
+[![License](https://img.shields.io/github/license/qcr/sites-home-internal)](./LICENSE.txt)
 
 This repository contains the resources that build our [internal home page](https://home.qcr.ai).
 
@@ -14,10 +16,10 @@ The site data YAML file has two top-level keys, `features` and `links`, which ar
 
 ### `features`
 
-| Key      | Required | Types     | Notes                                    |
-| -------- | -------- | -------- | ---------------------------------------- | 
-| `name`   | Yes      | `string` | Text shown on the feature card.          |
-| `target` | Yes      | `string` | Go to this URL when the card is clicked. |
+| Key      | Required | Types               | Notes                                                                                                                                                                                                                                                                                                                                     |
+| -------- | -------- | ------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `name`   | Yes      | `string`            | Text shown on the feature card.                                                                                                                                                                                                                                                                                                           |
+| `target` | Yes      | `string`            | Go to this URL when the card is clicked.                                                                                                                                                                                                                                                                                                  |
 | `media`  | No       | `string` `string[]` | Media to underlay in the feature card. Supports images and videos. String must be either a string pointing to a file in the `./public/` directory (i.e. `/image.jpg` will use the file at `./public/image.jpg`), or a URL pointing to an image. An array of strings can be provided to improve compatibility across browsers and devices. |
 
 ### `links`
