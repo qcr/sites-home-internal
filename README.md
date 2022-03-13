@@ -6,7 +6,7 @@
 
 This repository contains the resources that build our [internal home page](https://home.qcr.ai).
 
-TODO get access to setup CNAME for home subdomain
+![QCR's internal homepage](./.github/home.jpg)
 
 ## Changing the contents of the page
 
