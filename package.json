@@ -3,8 +3,8 @@
   "version": "0.2.3",
   "private": true,
   "scripts": {
-    "dev": "npm run build_loaders && next dev",
-    "build": "npm run build_loaders && next build && next export",
+    "dev": "next dev",
+    "build": "next build && next export",
     "build_loaders": "tsc -p loaders/",
     "start": "next start",
     "lint": "next lint"
