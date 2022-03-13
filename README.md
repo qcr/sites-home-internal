@@ -14,15 +14,15 @@ The site data YAML file has two top-level keys, `features` and `links`, which ar
 
 ### `features`
 
-| Key      | Required | Type     | Notes                                    |
-| -------- | -------- | -------- | ---------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Key      | Required | Types     | Notes                                    |
+| -------- | -------- | -------- | ---------------------------------------- | 
 | `name`   | Yes      | `string` | Text shown on the feature card.          |
 | `target` | Yes      | `string` | Go to this URL when the card is clicked. |
-| `media`  | No       | `string  | string[]`                                | Media to underlay in the feature card. Supports images and videos. String must be either a string pointing to a file in the `./public/` directory (i.e. `/image.jpg` will use the file at `./public/image.jpg`), or a URL pointing to an image. An array of strings can be provided to improve compatibility across browsers and devices. |
+| `media`  | No       | `string` `string[]` | Media to underlay in the feature card. Supports images and videos. String must be either a string pointing to a file in the `./public/` directory (i.e. `/image.jpg` will use the file at `./public/image.jpg`), or a URL pointing to an image. An array of strings can be provided to improve compatibility across browsers and devices. |
 
 ### `links`
 
-| Key      | Required | Type     | Notes                                    |
+| Key      | Required | Types    | Notes                                    |
 | -------- | -------- | -------- | ---------------------------------------- |
 | `name`   | Yes      | `string` | Text shown for the link.                 |
 | `target` | Yes      | `string` | Go to this URL when the link is clicked. |
