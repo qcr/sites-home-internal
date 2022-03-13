@@ -9,7 +9,7 @@ module.exports = {
       ...[
         {
           test: /\.ya?ml$/,
-          loader: "./loaders/yaml.js",
+          loader: "qcr-sites-shared/lib/loaders/yaml",
         },
       ]
     );
