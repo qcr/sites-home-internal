@@ -15,12 +15,14 @@ jobs:
         with:
           fetch-depth: 0
       - name: Setup node
-        uses: actions/setup-node@v1
+        uses: actions/setup-node@v2
         with:
           node-version: "16"
           check-latest: true
       - name: Install dependencies
-        run: npm install
+        run: |
+          npm install
+          npm update qcr-sites-shared
       - name: Build site
         run: npm run build
       - name: Push result to gh_pages branch
