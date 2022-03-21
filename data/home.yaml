@@ -5,19 +5,19 @@ features:
   - name: Wiki
     target: "https://wiki.qut.edu.au/display/cyphy/QUT+Centre+for+Robotics/"
     media: "/wiki.jpg"
-  - name: Technical docs
+  - name: Technical Docs
     target: "https://qcr-docs.qut.edu.au/"
     media:
       - "/docs.jpg"
       - "/docs.webm"
       - "/docs.mp4"
-  - name: Open source
+  - name: Open Source
     target: "https://qcr.github.io/"
     media: "/open_source.jpg"
   - name: Jobs
     target: "https://research.qut.edu.au/qcr/category/jobs-all/"
     media: "/jobs.jpg"
-  - name: QUT virtual
+  - name: QUT Virtual
     target: "https://qutvirtual4.qut.edu.au/"
     media: "/qut_virtual.jpg"
 links:
