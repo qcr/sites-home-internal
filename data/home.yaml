@@ -20,10 +20,3 @@ features:
   - name: QUT Virtual
     target: "https://qutvirtual4.qut.edu.au/"
     media: "/qut_virtual.jpg"
-links:
-  - name: Printing on S11
-    target: "https://wiki.qut.edu.au/display/cyphy/Printing"
-  - name: Reconcile credit card expenses
-    target: "https://flexipurchase.com/Site/#/home"
-  - name: Log a new HEAT request
-    target: "https://heat2.qut.edu.au/HEAT/Default.aspx"
