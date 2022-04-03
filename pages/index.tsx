@@ -21,6 +21,7 @@ const StyledBody = styled(QcrBody)({
 const StyledFeatures = styled("div")({
   alignContent: "center",
   display: "flex",
+  justifyContent: "center",
   flexDirection: "row",
   flexWrap: "wrap",
   marginTop: "16px",
