@@ -73,17 +73,17 @@ export default function HomePage() {
               />
             ))}
         </StyledFeatures>
-        <StyledLinks>
-          <StyledTitle variant="h4" color="primary">
-            Useful links
-          </StyledTitle>
-          {data.links &&
-            data.links.map((l, i) => (
-              <Typography key={i} variant="body1">
-                <a href={l.target}>{l.name}</a>
-              </Typography>
-            ))}
-        </StyledLinks>
+        {/* <StyledLinks> */}
+        {/*   <StyledTitle variant="h4" color="primary"> */}
+        {/*     Useful links */}
+        {/*   </StyledTitle> */}
+        {/*   {data.links && */}
+        {/*     data.links.map((l, i) => ( */}
+        {/*       <Typography key={i} variant="body1"> */}
+        {/*         <a href={l.target}>{l.name}</a> */}
+        {/*       </Typography> */}
+        {/*     ))} */}
+        {/* </StyledLinks> */}
       </StyledBody>
       <QcrBottomBar />
     </QcrPage>
