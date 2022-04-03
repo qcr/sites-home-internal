@@ -64,6 +64,7 @@ export default function HomePage() {
                 key={i}
                 text={f.name}
                 linkUrl={f.target}
+                subtext={f.subtext}
                 mediaUrls={
                   f.media
                     ? typeof f.media === "string"

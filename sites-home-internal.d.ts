@@ -5,6 +5,7 @@ declare module "*.yaml" {
   }
   interface MediaLink extends Link {
     media?: string | string[];
+    subtext?: string;
   }
   const content: {
     features?: MediaLink[];
