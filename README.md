@@ -12,22 +12,23 @@ This repository contains the resources that build our [internal home page](https
 
 All contents are served from the data contained in the [`./data/home.yaml`](./data/home.yaml) file. Editing this file, and pushing on the master branch, will a trigger a [GitHub Action](https://github.com/qcr/sites-home-internal/actions) to update the site.
 
-The site data YAML file has two top-level keys, `features` and `links`, which are lists of data. These lists populate the feature boxes and useful links sections respectively. The sections below describe what keys are supported in those lists.
+The site data YAML file has a top-level keys `features`, which is a list of data. The list populates the feature boxes section of the site. The sections below describe what keys are supported.
 
 ### `features`
 
-| Key      | Required | Types               | Notes                                                                                                                                                                                                                                                                                                                                     |
-| -------- | -------- | ------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `name`   | Yes      | `string`            | Text shown on the feature card.                                                                                                                                                                                                                                                                                                           |
-| `target` | Yes      | `string`            | Go to this URL when the card is clicked.                                                                                                                                                                                                                                                                                                  |
-| `media`  | No       | `string` `string[]` | Media to underlay in the feature card. Supports images and videos. String must be either a string pointing to a file in the `./public/` directory (i.e. `/image.jpg` will use the file at `./public/image.jpg`), or a URL pointing to an image. An array of strings can be provided to improve compatibility across browsers and devices. |
+| Key       | Required | Types               | Notes                                                                                                                                                                                                                                                                                                                                     |
+| --------- | -------- | ------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `name`    | Yes      | `string`            | Text shown on the feature card.                                                                                                                                                                                                                                                                                                           |
+| `target`  | Yes      | `string`            | Go to this URL when the card is clicked.                                                                                                                                                                                                                                                                                                  |
+| `subtext` | No       | `string`            | Subtext to show at the bottom of the card.                                                                                                                                                                                                                                                                                                |
+| `media`   | No       | `string` `string[]` | Media to underlay in the feature card. Supports images and videos. String must be either a string pointing to a file in the `./public/` directory (i.e. `/image.jpg` will use the file at `./public/image.jpg`), or a URL pointing to an image. An array of strings can be provided to improve compatibility across browsers and devices. |
 
-### `links`
+<!-- ### `links` -->
 
-| Key      | Required | Types    | Notes                                    |
-| -------- | -------- | -------- | ---------------------------------------- |
-| `name`   | Yes      | `string` | Text shown for the link.                 |
-| `target` | Yes      | `string` | Go to this URL when the link is clicked. |
+<!-- | Key      | Required | Types    | Notes                                    | -->
+<!-- | -------- | -------- | -------- | ---------------------------------------- | -->
+<!-- | `name`   | Yes      | `string` | Text shown for the link.                 | -->
+<!-- | `target` | Yes      | `string` | Go to this URL when the link is clicked. | -->
 
 ## Running website locally
 

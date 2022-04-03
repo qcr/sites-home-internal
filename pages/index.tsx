@@ -21,6 +21,7 @@ const StyledBody = styled(QcrBody)({
 const StyledFeatures = styled("div")({
   alignContent: "center",
   display: "flex",
+  justifyContent: "center",
   flexDirection: "row",
   flexWrap: "wrap",
   marginTop: "16px",
@@ -63,6 +64,7 @@ export default function HomePage() {
                 key={i}
                 text={f.name}
                 linkUrl={f.target}
+                subtext={f.subtext}
                 mediaUrls={
                   f.media
                     ? typeof f.media === "string"
@@ -73,17 +75,17 @@ export default function HomePage() {
               />
             ))}
         </StyledFeatures>
-        <StyledLinks>
-          <StyledTitle variant="h4" color="primary">
-            Useful links
-          </StyledTitle>
-          {data.links &&
-            data.links.map((l, i) => (
-              <Typography key={i} variant="body1">
-                <a href={l.target}>{l.name}</a>
-              </Typography>
-            ))}
-        </StyledLinks>
+        {/* <StyledLinks> */}
+        {/*   <StyledTitle variant="h4" color="primary"> */}
+        {/*     Useful links */}
+        {/*   </StyledTitle> */}
+        {/*   {data.links && */}
+        {/*     data.links.map((l, i) => ( */}
+        {/*       <Typography key={i} variant="body1"> */}
+        {/*         <a href={l.target}>{l.name}</a> */}
+        {/*       </Typography> */}
+        {/*     ))} */}
+        {/* </StyledLinks> */}
       </StyledBody>
       <QcrBottomBar />
     </QcrPage>
