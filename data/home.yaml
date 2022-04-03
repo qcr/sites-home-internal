@@ -23,5 +23,6 @@ features:
     target: "https://research.qut.edu.au/qcr/category/jobs-all/"
     media: "/jobs.jpg"
   - name: QUT Virtual
+    subtext: "https://qutvirtual.qut.edu.au"
     target: "https://qutvirtual4.qut.edu.au/"
     media: "/qut_virtual.jpg"
