@@ -8,7 +8,8 @@ features:
     target: "https://wiki.qut.edu.au/display/cyphy/QUT+Centre+for+Robotics/"
     media: "/wiki.jpg"
   - name: Technical Docs
-    subtext: "https://qcr.ai"
+    # subtext: "https://docs.qcr.ai"
+    subtext: "Under Development"
     target: "https://qcr-docs.qut.edu.au/"
     media:
       - "/docs.jpg"
