@@ -12,8 +12,7 @@ features:
     target: "https://qcr.github.io/"
     media: "/open_source.jpg"
   - name: Technical Docs
-    # subtext: "https://docs.qcr.ai"
-    subtext: "Under Development"
+    subtext: "https://docs.qcr.ai"
     target: "https://qcr-docs.qut.edu.au/"
     media:
       - "/docs.jpg"
